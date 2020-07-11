@@ -11,4 +11,12 @@ rm get-pip.py
 brew install thefuck wget z
 
 # pip install some stuff
-pip install click
+pip install click powerline-shell
+
+# install fonts for powerline-shell
+cd /tmp
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
