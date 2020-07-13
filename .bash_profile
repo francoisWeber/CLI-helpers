@@ -1,14 +1,14 @@
 # General alias
 alias ll="ls -lhFG"
-alias copypath="~/Code/helpers/copypath/copypath.py"
+alias copypath="~/Code/CLI-helpers/copypath/copypath.py"
 
 # Python
 alias python=python3
 export PATH="$PATH:~/Library/Python/3.8/bin"
 
-# The Fuck
+# Various softs
 eval "$(thefuck --alias)"
-
+source /usr/local/etc/profile.d/z.sh
 
 # Source other local bash_profil-like file
 # include .bashrc if it exists
