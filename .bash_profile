@@ -12,8 +12,8 @@ source /usr/local/etc/profile.d/z.sh
 
 # Source other local bash_profil-like file
 # include .bashrc if it exists
-if [ -f $HOME/.bash_profile_local ]; then
-    . $HOME/.bash_profile_local
+if [ -f $HOME/.local_bash_profile ]; then
+    . $HOME/.local_bash_profile
 fi
 
 # Prompt
