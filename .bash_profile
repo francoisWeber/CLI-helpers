@@ -2,6 +2,10 @@
 alias ll="ls -lhFG"
 alias copypath="~/Code/CLI-helpers/copypath/copypath.py"
 
+# Git
+git config --global alias.lg 'log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+git config --global alias.co checkout
+
 # Python
 alias python=python3
 export PATH="$PATH:~/Library/Python/3.8/bin"
