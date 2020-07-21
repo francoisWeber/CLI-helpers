@@ -16,6 +16,11 @@ if [ -f $HOME/.local_bash_profile ]; then
     . $HOME/.local_bash_profile
 fi
 
+# Git autocomplete
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
 # Prompt
 function _update_ps1() {
     PS1=$(powerline-shell $?)
