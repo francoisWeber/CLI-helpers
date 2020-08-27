@@ -4,9 +4,20 @@
     "python.jediEnabled": false,
     "nasc-touchbar.addCursorBelow": false,
     "nasc-touchbar.gitSync": true,
-    "window.zoomLevel": -1,
+    "window.zoomLevel": 0,
     "python.languageServer": "Microsoft",
     "git.autofetch": true,
     "editor.fontLigatures": false,
-    "terminal.integrated.fontFamily": "Meslo LG S for Powerline"
+    "terminal.integrated.fontFamily": "Meslo LG S for Powerline",
+    "terminal.integrated.shell.osx": "/bin/bash",
+    "autoDocstring.docstringFormat": "numpy",
+    "editor.rulers": [
+        88
+    ],
+    "editor.formatOnSave": true,
+    "python.formatting.provider": "black",
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    }
 }
