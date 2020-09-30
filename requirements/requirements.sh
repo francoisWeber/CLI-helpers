@@ -25,7 +25,13 @@ rm -rf fonts
 ## Autocomplete
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 
+# Markdown TOC
+curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o ~/markdown-toc
+chmod a+x markdown-toc
+
+
 ## global alias
 git config --global alias.lg 'log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 git config --global alias.co checkout
+git config --global alias.sha 'git rev-parse HEAD'
 git config --global core.editor "nano"
