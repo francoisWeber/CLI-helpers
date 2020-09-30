@@ -33,5 +33,5 @@ chmod a+x markdown-toc
 ## global alias
 git config --global alias.lg 'log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 git config --global alias.co checkout
-git config --global alias.sha 'git rev-parse HEAD'
+git config --global alias.sha 'rev-parse HEAD'
 git config --global core.editor "nano"
