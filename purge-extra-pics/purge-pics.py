@@ -3,7 +3,7 @@ import click
 from os import path as osp
 from os import remove, listdir
 
-EXTRA_FILE_EXT_LOWERCASE = [".nef", ".raw", ".mov"]
+EXTRA_FILE_EXT_LOWERCASE = [".nef", ".raw", ".mov", ".dng"]
 MAIN_FILE_EXT_LOWERCASE = [".jpg", ".jpeg", ".heic", ".heif"]
 EXTRA_DIRECTORY_NAME = "RAW"
 
