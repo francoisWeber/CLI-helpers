@@ -8,7 +8,7 @@ python3 get-pip.py
 rm get-pip.py
 
 # brew some stuff
-brew install thefuck wget z htop
+brew install thefuck wget z htop github-markdown-toc
 
 # pip install some stuff
 pip install click powerline-shell
@@ -24,11 +24,6 @@ rm -rf fonts
 # Git
 ## Autocomplete
 curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
-
-# Markdown TOC
-curl https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc -o ~/markdown-toc
-chmod a+x markdown-toc
-
 
 ## global alias
 git config --global alias.lg 'log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
