@@ -1,6 +1,7 @@
 # General alias
 alias ll="ls -lhFG"
 alias copypath="~/Code/CLI-helpers/copypath/copypath.py"
+alias meteo='curl http://wttr.in/'
 
 # Python
 alias python=python3
