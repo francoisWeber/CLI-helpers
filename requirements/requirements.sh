@@ -8,7 +8,7 @@ python3 get-pip.py
 rm get-pip.py
 
 # brew some stuff
-brew install thefuck wget z htop github-markdown-toc
+brew install thefuck wget z htop github-markdown-toc imagick
 
 # pip install some stuff
 pip install click powerline-shell

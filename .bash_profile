@@ -11,6 +11,7 @@ export PATH="$PATH:~/Library/Python/3.8/bin"
 # Various softs
 eval "$(thefuck --alias)"
 source /usr/local/etc/profile.d/z.sh
+source ~/Code/CLI-helpers/iPhone-converters/iphone-converters.sh
 
 # Source other local bash_profil-like file
 # include .bashrc if it exists
