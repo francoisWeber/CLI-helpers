@@ -2,6 +2,7 @@
 alias ll="ls -lhFG"
 alias copypath="~/Code/CLI-helpers/copypath/copypath.py"
 alias meteo='curl http://wttr.in/'
+alias octal='stat -f %A'
 
 # Python
 alias python=python3
