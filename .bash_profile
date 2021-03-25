@@ -1,11 +1,4 @@
-# General alias
-alias ll="ls -lhFG"
-alias copypath="~/Code/CLI-helpers/copypath/copypath.py"
-alias meteo='curl http://wttr.in/'
-alias octal='stat -f %A'
-
 # pics
-alias pics-dirs='mkdir RAW Vidéos && mv *.NEF RAW && mv *.mov Vidéos'
 function heic2jpeg {
     for i in *.heic; do 
         convert -quality 98 "$i" "${i%.heic}.jpg"
@@ -29,7 +22,6 @@ function mov2mp4 {
 }
 
 # Python
-alias python=python3
 export PATH="$PATH:~/Library/Python/3.8/bin"
 
 # Various softs

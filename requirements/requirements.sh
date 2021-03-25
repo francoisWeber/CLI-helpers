@@ -29,4 +29,6 @@ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-com
 git config --global alias.lg 'log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
 git config --global alias.co checkout
 git config --global alias.sha 'rev-parse HEAD'
+git config --global alias.ammend 'git commit --amend'
+git config --global alias.last 'log -1 HEAD'
 git config --global core.editor "nano"
