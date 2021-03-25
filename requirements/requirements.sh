@@ -32,3 +32,8 @@ git config --global alias.sha 'rev-parse HEAD'
 git config --global alias.ammend 'git commit --amend'
 git config --global alias.last 'log -1 HEAD'
 git config --global core.editor "nano"
+
+## Echo some stuff into ~/.bash_profile
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+echo "source $DIR/../.bash_profile" >> ~/.bash_profile
+echo "source $DIR/../.alias" >> ~/.bash_profile
