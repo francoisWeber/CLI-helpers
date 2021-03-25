@@ -15,7 +15,7 @@ Je vous rappelle que vous bénéficiez d'un délai d'1 mois pour effectuer ces a
 @click.pass_context
 def cli(ctx):
     if ctx.invoked_subcommand not in ["menace", "plainte"]:
-        print("Option non reconnue 🤷")
+        print("Option non reconnue 🤷 Possibilités: 'menace', 'plainte'")
 
 
 @cli.command()
@@ -32,7 +32,7 @@ Cordialement.
     print(message)
 
 
-@cli.command()
+@cli.command(no_args_is_help=True)
 @click.argument("entity", type=str)
 @click.argument("previous_claims", type=str, nargs=-1)
 def plainte(entity, previous_claims):
