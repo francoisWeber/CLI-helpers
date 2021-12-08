@@ -8,6 +8,7 @@ alias octal='stat -f %A'
 
 ## Python
 alias python=python3
+alias pip=pip3
 
 ## Medias alias
 alias pics-dirs='mkdir RAW Vidéos && mv *.NEF RAW && mv *.mov Vidéos'

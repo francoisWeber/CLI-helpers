@@ -1,14 +1,14 @@
 # install Brew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
-# install python
-brew install python
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
-python3 get-pip.py
-rm get-pip.py
+# # install python
+# brew install python
+# curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+# python3 get-pip.py
+# rm get-pip.py
 
 # brew some stuff
-brew install thefuck wget z htop github-markdown-toc imagick
+brew install thefuck wget z htop github-markdown-toc imagemagick
 
 # pip install some stuff
 pip install click powerline-shell
@@ -27,9 +27,9 @@ curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-com
 
 ## global alias
 git config --global alias.lg 'log --graph --pretty=format:"%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset" --abbrev-commit'
+git config --global alias.amend 'commit --amend --no-edit'
 git config --global alias.co checkout
 git config --global alias.sha 'rev-parse HEAD'
-git config --global alias.ammend 'commit --amend'
 git config --global alias.last 'log -1 HEAD'
 git config --global core.editor "nano"
 

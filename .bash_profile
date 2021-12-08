@@ -26,7 +26,6 @@ export PATH="$PATH:~/Library/Python/3.8/bin"
 
 # Various softs
 eval "$(thefuck --alias)"
-source /usr/local/etc/profile.d/z.sh
 
 # Add my tools to path
 export PATH="$PATH:~/Code/CLI-helpers/pics-handling"
@@ -36,7 +35,6 @@ export PATH="$PATH:~/Code/CLI-helpers/pics-handling"
 if [ -f $HOME/.local_bash_profile ]; then
     . $HOME/.local_bash_profile
 fi
-
 # Git autocomplete
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
@@ -51,3 +49,5 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
+# Z
+ . /opt/homebrew/etc/profile.d/z.sh
