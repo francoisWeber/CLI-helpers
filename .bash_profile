@@ -1,7 +1,7 @@
 # pics
 function heic2jpeg {
     for i in *.heic; do 
-        convert -quality 98 "$i" "${i%.heic}.jpg"
+        convert -quality 100 "$i" "${i%.heic}.jpg"
     done
     jhead -ft *.jpg
 }
@@ -19,6 +19,11 @@ function mov2mp4 {
         ffmpeg -i "$i" "${i%.mov}.mp4"
         rm "$i"
     done
+
+    for i in *.MOV; do 
+        ffmpeg -i "$i" "${i%.mov}.mp4"
+        rm "$i"
+    done
 }
 
 # Python
@@ -26,6 +31,7 @@ export PATH="$PATH:~/Library/Python/3.8/bin"
 
 # Various softs
 eval "$(thefuck --alias)"
+
 
 # Add my tools to path
 export PATH="$PATH:~/Code/CLI-helpers/pics-handling"
@@ -40,14 +46,10 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
 
-# Prompt
-function _update_ps1() {
-    PS1=$(powerline-shell $?)
-}
 
-if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
-    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
 
 # Z
  . /opt/homebrew/etc/profile.d/z.sh
+
+
+

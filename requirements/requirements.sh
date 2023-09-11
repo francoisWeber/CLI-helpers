@@ -9,6 +9,7 @@
 
 # brew some stuff
 brew install thefuck wget z htop github-markdown-toc imagemagick
+brew install noborus/tap/trdsql
 
 # pip install some stuff
 pip install click powerline-shell

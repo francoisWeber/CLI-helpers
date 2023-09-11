@@ -1,9 +1,9 @@
-#! /usr/local/bin/python3
+#! /opt/homebrew/bin/python3
 import click
 from os import path as osp
 from os import remove, listdir
 
-EXTRA_FILE_EXT_LOWERCASE = [".nef", ".raw", ".mov", ".dng"]
+EXTRA_FILE_EXT_LOWERCASE = [".nef", ".raw", ".mov", ".dng", "arw"]
 MAIN_FILE_EXT_LOWERCASE = [".jpg", ".jpeg", ".heic", ".heif"]
 EXTRA_DIRECTORY_NAME = "RAW"
 
