@@ -41,15 +41,15 @@ export PATH="$PATH:~/Code/CLI-helpers/pics-handling"
 if [ -f $HOME/.local_bash_profile ]; then
     . $HOME/.local_bash_profile
 fi
-# Git autocomplete
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+
+# # Git autocomplete
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+  . /opt/local/etc/profile.d/bash_completion.sh
 fi
 
 
+# Autocompletion for ZSH
+autoload -Uz compinit && compinit
 
 # Z
- . /opt/homebrew/etc/profile.d/z.sh
-
-
-
+. /opt/homebrew/etc/profile.d/z.sh
