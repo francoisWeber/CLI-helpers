@@ -22,9 +22,11 @@ git config --global alias.amend 'commit --amend --no-edit'
 git config --global alias.co checkout
 git config --global alias.sha 'rev-parse HEAD'
 git config --global alias.last 'log -1 HEAD'
+git config --global alias.pushfwk 'push --force-with-lease'
+
 git config --global core.editor "nano"
 
 ## Echo some stuff into ~/.bash_profile
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
-echo "source $DIR/../.bash_profile" >> ~/.bash_profile
-echo "source $DIR/../.alias" >> ~/.bash_profile
+echo "source $DIR/.bash_profile" >> ~/.bash_profile
+echo "source $DIR/.alias" >> ~/.bash_profile
